@@ -6,11 +6,16 @@
       :class="$style.image"/>
     </nuxt-link>
     <p>Цена {{ product.pPrice }}</p>
+    <BuyButton :product="product" />
   </div>
 </template>
 
 <script>
+import BuyButton from '~~/components/common/BuyButton'
 export default {
+  components: {
+    BuyButton
+  },
   props: {
     product: {
       type: Object,

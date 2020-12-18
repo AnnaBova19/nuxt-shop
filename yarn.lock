@@ -7560,6 +7560,13 @@ nuxt-trailingslash-module@1.1.0:
   resolved "https://registry.yarnpkg.com/nuxt-trailingslash-module/-/nuxt-trailingslash-module-1.1.0.tgz#9038b82c2b426b07d9c1279bd1758829571beeee"
   integrity sha512-cZHN+I3FPaQuJ0pDmXJ+E+7Sl2HTsLrh2vEV2ZW6HmRWRHDuooKIfxYgSrJfemZejiumyGjB8/5LA4MpVO5rfg==
 
+nuxt-vuex-localstorage@^1.2.7:
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/nuxt-vuex-localstorage/-/nuxt-vuex-localstorage-1.2.7.tgz#6d609407d9e7b449907e85aeecbbc249fda8c97e"
+  integrity sha512-3L31Kibd83Dm/swEQzFHCwSHhEB2pQkBaE3sYw1NhivX+P7LHGGw+MC3y/89ef4RxblPWZKCm+jnNmPhTW8Bzg==
+  dependencies:
+    axios "^0.19.2"
+
 nuxt-webfontloader@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/nuxt-webfontloader/-/nuxt-webfontloader-1.1.0.tgz#68b47ffbeaee4c41969f42f57a86946e0c36715c"

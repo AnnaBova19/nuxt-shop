@@ -51,7 +51,13 @@ module.exports = {
     'nuxt-trailingslash-module',
     'nuxt-webfontloader',
     'cookie-universal-nuxt',
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    ['nuxt-vuex-localstorage', {
+      ...(isDev && {
+        mode: 'debug'
+      }),
+      localStorage: ['cart'] //  If not entered, “localStorage” is the default value
+    }]
   ],
 
   webfontloader: {
