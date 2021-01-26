@@ -17,6 +17,15 @@
 import ProductBrief from '~~/components/category/ProductBrief'
 import { mapState } from 'vuex'
 export default {
+  // parameters validation
+  validate({params}) {
+    let cats = ['cats', 'dogs', 'wolfs', 'bulls']
+    if (cats.includes(params.CategorySlug)) {
+      return true
+    } else {
+      return false
+    }
+  },
   components: {
     ProductBrief
   },

@@ -1,8 +1,13 @@
 <template>
   <div>
-    <Header />
-    <Breadcrumbs />
-    <nuxt/>
+    <div>
+      <Header />
+    </div>
+    <div>
+      <Breadcrumbs />
+      <nuxt />
+      <CustomerCartModal />
+    </div>
     <Footer/>
   </div>
 </template>
@@ -11,12 +16,14 @@
 import Header from '~~/components/common/Header.vue'
 import Footer from '~~/components/common/Footer.vue'
 import Breadcrumbs from '~~/components/common/Breadcrumbs.vue'
+import CustomerCartModal from '~~/components/modals/CustomerCartModal.vue'
 
 export default {
   components: {
     Header,
     Footer,
-    Breadcrumbs
+    Breadcrumbs,
+    CustomerCartModal
   },
   computed: {
     meta () {

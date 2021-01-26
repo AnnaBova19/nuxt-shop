@@ -1,3 +1,4 @@
+const pkg = require('./package')
 const imageminMozjpeg = require('imagemin-mozjpeg')
 const ImageminPlugin = require('imagemin-webpack-plugin').default
 const isDev = process.env.NODE_ENV !== 'production'
@@ -12,7 +13,8 @@ module.exports = {
     htmlAttrs: {
       lang: 'ru'
     },
-    title: 'Nuxt APP',
+    title: pkg.name,
+    title: 'Nuxt Shop',
     meta: [
       { hid: 'description', name: 'description', content: 'Интернет-магазин' }
     ],
@@ -43,7 +45,8 @@ module.exports = {
     './assets/scss/global-styles.scss'
   ],
   plugins: [
-    { src: '~~/plugins/vue-lazy-load.js' }
+    { src: '~~/plugins/vue-lazy-load.js' },
+    { src: '~~/plugins/vue-modal.js', mode: 'client' },
   ],
   modules: [
     // Doc: https://axios.nuxtjs.org/usage

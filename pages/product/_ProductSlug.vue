@@ -17,15 +17,21 @@
     </div>
     <h2>Описание</h2>
     <p>{{ product.pDesc }}</p>
+    <h2>С этим товаром также покупают</h2>
+    <ProductsList :products="product.alsoBuyProducts" />
+    <h2>Возможно вам будет интересно</h2>
+    <ProductsList :products="product.interestingProducts" />
   </div>
 </template>
 
 <script>
 import BuyButton from '~~/components/common/BuyButton'
+import ProductsList from '~~/components/common/ProductsList'
 import { mapState } from 'vuex'
 export default {
   components: {
     BuyButton,
+    ProductsList
   },
   async asyncData ({ app, params, route, error }) {
     try {
